@@ -1,7 +1,7 @@
 import * as api from '@opentelemetry/api';
 import { InstrumentationBase, InstrumentationConfig } from '@opentelemetry/instrumentation';
 import { OpenFunction, PropagateTraceHeaderCorsUrls, SendFunction, XhrMem } from './types';
-export declare type XHRCustomAttributeFunction = (span: api.Span, xhr: XMLHttpRequest) => void;
+export type XHRCustomAttributeFunction = (span: api.Span, xhr: XMLHttpRequest) => void;
 /**
  * XMLHttpRequest config
  */

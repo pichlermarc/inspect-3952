@@ -3,7 +3,7 @@ import { InstrumentSelector } from './InstrumentSelector';
 import { MeterSelector } from './MeterSelector';
 import { Aggregation } from './Aggregation';
 import { InstrumentType } from '../InstrumentDescriptor';
-export declare type ViewOptions = {
+export type ViewOptions = {
     /**
      *  Alters the metric stream:
      *  This will be used as the name of the metrics stream.

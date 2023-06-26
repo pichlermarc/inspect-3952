@@ -40,5 +40,5 @@ export interface InstrumentationScope {
     readonly schemaUrl?: string;
 }
 /** Defines an error handler function */
-export declare type ErrorHandler = (ex: Exception) => void;
+export type ErrorHandler = (ex: Exception) => void;
 //# sourceMappingURL=types.d.ts.map

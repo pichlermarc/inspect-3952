@@ -1,4 +1,5 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import type * as http from 'http';
 import * as url from 'url';
 import { Func, Http, HttpInstrumentationConfig, HttpRequestArgs, Https } from './types';

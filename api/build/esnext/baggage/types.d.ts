@@ -12,7 +12,7 @@ export interface BaggageEntry {
  * Serializable Metadata defined by the W3C baggage specification.
  * It currently has no special meaning defined by the OpenTelemetry or W3C.
  */
-export declare type BaggageEntryMetadata = {
+export type BaggageEntryMetadata = {
     toString(): string;
 } & {
     __TYPE__: typeof baggageEntryMetadataSymbol;

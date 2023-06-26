@@ -62,19 +62,19 @@ export interface Histogram<AttributesTypes extends MetricAttributes = MetricAttr
 /**
  * @deprecated please use {@link Attributes}
  */
-export declare type MetricAttributes = Attributes;
+export type MetricAttributes = Attributes;
 /**
  * @deprecated please use {@link AttributeValue}
  */
-export declare type MetricAttributeValue = AttributeValue;
+export type MetricAttributeValue = AttributeValue;
 /**
  * The observable callback for Observable instruments.
  */
-export declare type ObservableCallback<AttributesTypes extends MetricAttributes = MetricAttributes> = (observableResult: ObservableResult<AttributesTypes>) => void | Promise<void>;
+export type ObservableCallback<AttributesTypes extends MetricAttributes = MetricAttributes> = (observableResult: ObservableResult<AttributesTypes>) => void | Promise<void>;
 /**
  * The observable callback for a batch of Observable instruments.
  */
-export declare type BatchObservableCallback<AttributesTypes extends MetricAttributes = MetricAttributes> = (observableResult: BatchObservableResult<AttributesTypes>) => void | Promise<void>;
+export type BatchObservableCallback<AttributesTypes extends MetricAttributes = MetricAttributes> = (observableResult: BatchObservableResult<AttributesTypes>) => void | Promise<void>;
 export interface Observable<AttributesTypes extends MetricAttributes = MetricAttributes> {
     /**
      * Sets up a function that will be called whenever a metric collection is initiated.
@@ -87,7 +87,7 @@ export interface Observable<AttributesTypes extends MetricAttributes = MetricAtt
      */
     removeCallback(callback: ObservableCallback<AttributesTypes>): void;
 }
-export declare type ObservableCounter<AttributesTypes extends MetricAttributes = MetricAttributes> = Observable<AttributesTypes>;
-export declare type ObservableUpDownCounter<AttributesTypes extends MetricAttributes = MetricAttributes> = Observable<AttributesTypes>;
-export declare type ObservableGauge<AttributesTypes extends MetricAttributes = MetricAttributes> = Observable<AttributesTypes>;
+export type ObservableCounter<AttributesTypes extends MetricAttributes = MetricAttributes> = Observable<AttributesTypes>;
+export type ObservableUpDownCounter<AttributesTypes extends MetricAttributes = MetricAttributes> = Observable<AttributesTypes>;
+export type ObservableGauge<AttributesTypes extends MetricAttributes = MetricAttributes> = Observable<AttributesTypes>;
 //# sourceMappingURL=Metric.d.ts.map

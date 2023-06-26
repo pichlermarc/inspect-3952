@@ -5,7 +5,7 @@ import { SpanProcessor } from '@opentelemetry/sdk-trace-base';
 import { NodeTracerConfig } from '@opentelemetry/sdk-trace-node';
 import { NodeSDKConfiguration } from './types';
 /** This class represents everything needed to register a fully configured OpenTelemetry Node.js SDK */
-export declare type MeterProviderConfig = {
+export type MeterProviderConfig = {
     /**
      * Reference to the MetricReader instance by the NodeSDK
      */

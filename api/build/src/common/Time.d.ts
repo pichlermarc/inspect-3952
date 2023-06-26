@@ -10,11 +10,11 @@
  * HrTime[1] = Number((1609504210.150 - HrTime[0]).toFixed(9)) * 1e9 = 150000000.
  * This is represented in HrTime format as [1609504210, 150000000].
  */
-export declare type HrTime = [number, number];
+export type HrTime = [number, number];
 /**
  * Defines TimeInput.
  *
  * hrtime, epoch milliseconds, performance.now() or Date
  */
-export declare type TimeInput = HrTime | number | Date;
+export type TimeInput = HrTime | number | Date;
 //# sourceMappingURL=Time.d.ts.map

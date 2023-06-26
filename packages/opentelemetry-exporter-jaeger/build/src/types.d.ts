@@ -17,7 +17,7 @@ export declare const UDPSender: any;
 export declare const Utils: any;
 export declare const ThriftUtils: any;
 export declare const HTTPSender: any;
-export declare type TagValue = string | number | boolean;
+export type TagValue = string | number | boolean;
 export interface Tag {
     key: string;
     value: TagValue;
@@ -26,7 +26,7 @@ export interface Log {
     timestamp: number;
     fields: Tag[];
 }
-export declare type SenderCallback = (numSpans: number, err?: string) => void;
+export type SenderCallback = (numSpans: number, err?: string) => void;
 export interface ThriftProcess {
     serviceName: string;
     tags: ThriftTag[];

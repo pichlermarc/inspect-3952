@@ -16,7 +16,7 @@ export declare const _grpcStatusCodeToSpanStatus: (status: number) => SpanStatus
  * @param ignoredMethods a list of matching patterns
  * @param onException an error handler for matching exceptions
  */
-export declare const _methodIsIgnored: (methodName: string, ignoredMethods?: IgnoreMatcher[] | undefined) => boolean;
+export declare const _methodIsIgnored: (methodName: string, ignoredMethods?: IgnoreMatcher[]) => boolean;
 /**
  * Return method and service values getting from grpc name/path
  * @param name the grpc name/path

@@ -11,5 +11,5 @@ export interface Attributes {
  *
  * null or undefined attribute values are invalid and will result in undefined behavior.
  */
-export declare type AttributeValue = string | number | boolean | Array<null | undefined | string> | Array<null | undefined | number> | Array<null | undefined | boolean>;
+export type AttributeValue = string | number | boolean | Array<null | undefined | string> | Array<null | undefined | number> | Array<null | undefined | boolean>;
 //# sourceMappingURL=Attributes.d.ts.map

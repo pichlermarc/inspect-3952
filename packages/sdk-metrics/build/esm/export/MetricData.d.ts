@@ -45,7 +45,7 @@ export interface ExponentialHistogramMetricData extends BaseMetricData {
 /**
  * Represents an aggregated metric data.
  */
-export declare type MetricData = SumMetricData | GaugeMetricData | HistogramMetricData | ExponentialHistogramMetricData;
+export type MetricData = SumMetricData | GaugeMetricData | HistogramMetricData | ExponentialHistogramMetricData;
 export interface ScopeMetrics {
     scope: InstrumentationScope;
     metrics: MetricData[];

@@ -1,6 +1,6 @@
 import { Span } from '@opentelemetry/api';
 import type * as grpcJsTypes from '@grpc/grpc-js';
-export declare type metadataCaptureType = {
+export type metadataCaptureType = {
     client: {
         captureRequestMetadata: (span: Span, metadata: grpcJsTypes.Metadata) => void;
         captureResponseMetadata: (span: Span, metadata: grpcJsTypes.Metadata) => void;

@@ -3,8 +3,8 @@ import { IResource } from '@opentelemetry/resources';
 import { SpanProcessor, Tracer } from '.';
 import { SDKRegistrationConfig, TracerConfig } from './types';
 import { SpanExporter } from './export/SpanExporter';
-export declare type PROPAGATOR_FACTORY = () => TextMapPropagator;
-export declare type EXPORTER_FACTORY = () => SpanExporter;
+export type PROPAGATOR_FACTORY = () => TextMapPropagator;
+export type EXPORTER_FACTORY = () => SpanExporter;
 export declare enum ForceFlushState {
     'resolved' = 0,
     'timeout' = 1,

@@ -2,7 +2,7 @@ import { BasicTracerProvider, SDKRegistrationConfig, TracerConfig } from '@opent
 /**
  * WebTracerConfig provides an interface for configuring a Web Tracer.
  */
-export declare type WebTracerConfig = TracerConfig;
+export type WebTracerConfig = TracerConfig;
 /**
  * This class represents a web tracer with {@link StackContextManager}
  */

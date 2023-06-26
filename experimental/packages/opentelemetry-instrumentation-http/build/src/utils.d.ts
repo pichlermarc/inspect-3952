@@ -9,7 +9,7 @@ export declare const getAbsoluteUrl: (requestUrl: ParsedRequestOptions | null, h
 /**
  * Parse status code from HTTP response. [More details](https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/data-http.md#status)
  */
-export declare const parseResponseStatus: (kind: SpanKind, statusCode?: number | undefined) => SpanStatusCode;
+export declare const parseResponseStatus: (kind: SpanKind, statusCode?: number) => SpanStatusCode;
 /**
  * Check whether the given obj match pattern
  * @param constant e.g URL of request
@@ -24,7 +24,7 @@ export declare const satisfiesPattern: (constant: string, pattern: IgnoreMatcher
  * @param [onException] callback for doing something when an exception has
  *     occurred
  */
-export declare const isIgnored: (constant: string, list?: IgnoreMatcher[] | undefined, onException?: ((error: unknown) => void) | undefined) => boolean;
+export declare const isIgnored: (constant: string, list?: IgnoreMatcher[], onException?: ((error: unknown) => void) | undefined) => boolean;
 /**
  * Sets the span with the error passed in params
  * @param {Span} span the span that need to be set
@@ -50,7 +50,7 @@ export declare const isCompressed: (headers: OutgoingHttpHeaders | IncomingHttpH
  * @param options original options for the request
  * @param [extraOptions] additional options for the request
  */
-export declare const getRequestInfo: (options: url.URL | RequestOptions | string, extraOptions?: RequestOptions | undefined) => {
+export declare const getRequestInfo: (options: url.URL | RequestOptions | string, extraOptions?: RequestOptions) => {
     origin: string;
     pathname: string;
     method: string;
@@ -85,7 +85,7 @@ export declare const getOutgoingRequestMetricAttributes: (spanAttributes: SpanAt
  * Returns attributes related to the kind of HTTP protocol used
  * @param {string} [kind] Kind of HTTP protocol used: "1.0", "1.1", "2", "SPDY" or "QUIC".
  */
-export declare const getAttributesFromHttpKind: (kind?: string | undefined) => SpanAttributes;
+export declare const getAttributesFromHttpKind: (kind?: string) => SpanAttributes;
 /**
  * Returns outgoing request attributes scoped to the response data
  * @param {IncomingMessage} response the response object

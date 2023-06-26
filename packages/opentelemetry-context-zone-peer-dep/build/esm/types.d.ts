@@ -1,4 +1,4 @@
-export declare type Func<T> = (...args: unknown[]) => T;
+export type Func<T> = (...args: unknown[]) => T;
 /**
  * Minimum requirements that the object needs to have so that it can bind to the events instead of function
  * this is "addEventListener" and "removeEventListener" - see {@link isListenerObject}

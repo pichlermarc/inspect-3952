@@ -21,6 +21,6 @@ interface ExceptionWithName {
  *
  * string or an object with one of (message or name or code) and optional stack
  */
-export declare type Exception = ExceptionWithCode | ExceptionWithMessage | ExceptionWithName | string;
+export type Exception = ExceptionWithCode | ExceptionWithMessage | ExceptionWithName | string;
 export {};
 //# sourceMappingURL=Exception.d.ts.map

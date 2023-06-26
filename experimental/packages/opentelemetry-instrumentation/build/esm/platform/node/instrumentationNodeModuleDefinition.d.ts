@@ -2,9 +2,9 @@ import { InstrumentationModuleDefinition, InstrumentationModuleFile } from './ty
 export declare class InstrumentationNodeModuleDefinition<T> implements InstrumentationModuleDefinition<T> {
     name: string;
     supportedVersions: string[];
-    patch?: ((exports: T, moduleVersion?: string | undefined) => T) | undefined;
-    unpatch?: ((exports: T, moduleVersion?: string | undefined) => void) | undefined;
+    patch?: ((exports: T, moduleVersion?: string) => T) | undefined;
+    unpatch?: ((exports: T, moduleVersion?: string) => void) | undefined;
     files: InstrumentationModuleFile<T>[];
-    constructor(name: string, supportedVersions: string[], patch?: ((exports: T, moduleVersion?: string | undefined) => T) | undefined, unpatch?: ((exports: T, moduleVersion?: string | undefined) => void) | undefined, files?: InstrumentationModuleFile<any>[]);
+    constructor(name: string, supportedVersions: string[], patch?: ((exports: T, moduleVersion?: string) => T) | undefined, unpatch?: ((exports: T, moduleVersion?: string) => void) | undefined, files?: InstrumentationModuleFile<any>[]);
 }
 //# sourceMappingURL=instrumentationNodeModuleDefinition.d.ts.map

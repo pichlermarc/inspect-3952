@@ -12,9 +12,9 @@ export declare enum AggregatorKind {
     EXPONENTIAL_HISTOGRAM = 4
 }
 /** DataPoint value type for SumAggregation. */
-export declare type Sum = number;
+export type Sum = number;
 /** DataPoint value type for LastValueAggregation. */
-export declare type LastValue = number;
+export type LastValue = number;
 /** DataPoint value type for HistogramAggregation. */
 export interface Histogram {
     /**
@@ -66,7 +66,7 @@ export interface Accumulation {
     setStartTime(startTime: HrTime): void;
     record(value: number): void;
 }
-export declare type AccumulationRecord<T> = [MetricAttributes, T];
+export type AccumulationRecord<T> = [MetricAttributes, T];
 /**
  * Base interface for aggregators. Aggregators are responsible for holding
  * aggregated values and taking a snapshot of these values upon export.

@@ -5,7 +5,7 @@ import { MetricData, DataPoint, DataPointType, ScopeMetrics } from '../src/expor
 import { HrTime } from '@opentelemetry/api';
 import { Histogram } from '../src/aggregator/types';
 import { AggregationTemporality } from '../src/export/AggregationTemporality';
-export declare type Measurement = {
+export type Measurement = {
     value: number;
     attributes: MetricAttributes;
     context?: Context;

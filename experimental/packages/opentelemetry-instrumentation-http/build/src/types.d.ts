@@ -1,21 +1,23 @@
 /// <reference types="node" />
+/// <reference types="node" />
+/// <reference types="node" />
 import { Span, SpanAttributes } from '@opentelemetry/api';
 import type * as http from 'http';
 import type * as https from 'https';
 import { ClientRequest, get, IncomingMessage, request, ServerResponse, RequestOptions } from 'http';
 import * as url from 'url';
 import { InstrumentationConfig } from '@opentelemetry/instrumentation';
-export declare type IgnoreMatcher = string | RegExp | ((url: string) => boolean);
-export declare type HttpCallback = (res: IncomingMessage) => void;
-export declare type RequestFunction = typeof request;
-export declare type GetFunction = typeof get;
-export declare type HttpCallbackOptional = HttpCallback | undefined;
-export declare type RequestSignature = [http.RequestOptions, HttpCallbackOptional] & HttpCallback;
-export declare type HttpRequestArgs = Array<HttpCallbackOptional | RequestSignature>;
-export declare type ParsedRequestOptions = (http.RequestOptions & Partial<url.UrlWithParsedQuery>) | http.RequestOptions;
-export declare type Http = typeof http;
-export declare type Https = typeof https;
-export declare type Func<T> = (...args: any[]) => T;
+export type IgnoreMatcher = string | RegExp | ((url: string) => boolean);
+export type HttpCallback = (res: IncomingMessage) => void;
+export type RequestFunction = typeof request;
+export type GetFunction = typeof get;
+export type HttpCallbackOptional = HttpCallback | undefined;
+export type RequestSignature = [http.RequestOptions, HttpCallbackOptional] & HttpCallback;
+export type HttpRequestArgs = Array<HttpCallbackOptional | RequestSignature>;
+export type ParsedRequestOptions = (http.RequestOptions & Partial<url.UrlWithParsedQuery>) | http.RequestOptions;
+export type Http = typeof http;
+export type Https = typeof https;
+export type Func<T> = (...args: any[]) => T;
 export interface HttpCustomAttributeFunction {
     (span: Span, request: ClientRequest | IncomingMessage, response: IncomingMessage | ServerResponse): void;
 }

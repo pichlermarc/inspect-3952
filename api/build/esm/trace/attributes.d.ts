@@ -2,9 +2,9 @@ import { Attributes, AttributeValue } from '../common/Attributes';
 /**
  * @deprecated please use {@link Attributes}
  */
-export declare type SpanAttributes = Attributes;
+export type SpanAttributes = Attributes;
 /**
  * @deprecated please use {@link AttributeValue}
  */
-export declare type SpanAttributeValue = AttributeValue;
+export type SpanAttributeValue = AttributeValue;
 //# sourceMappingURL=attributes.d.ts.map

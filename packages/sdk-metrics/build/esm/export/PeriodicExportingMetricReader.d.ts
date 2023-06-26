@@ -1,6 +1,6 @@
 import { MetricReader } from './MetricReader';
 import { PushMetricExporter } from './MetricExporter';
-export declare type PeriodicExportingMetricReaderOptions = {
+export type PeriodicExportingMetricReaderOptions = {
     /**
      * The backing exporter for the metric reader.
      */

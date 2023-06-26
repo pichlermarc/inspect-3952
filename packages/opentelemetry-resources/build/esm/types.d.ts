@@ -6,7 +6,7 @@ import { IResource } from './IResource';
  * General `Attributes` interface is added in api v1.1.0.
  * To backward support older api (1.0.x), the deprecated `SpanAttributes` is used here.
  */
-export declare type ResourceAttributes = SpanAttributes;
+export type ResourceAttributes = SpanAttributes;
 /**
  * @deprecated please use {@link DetectorSync}
  */

@@ -5,7 +5,7 @@ import { HrTime, MetricAttributes } from '@opentelemetry/api';
  * was recorded, for example the span and trace ID of the active span when the
  * exemplar was recorded.
  */
-export declare type Exemplar = {
+export type Exemplar = {
     filteredAttributes: MetricAttributes;
     value: number;
     timestamp: HrTime;

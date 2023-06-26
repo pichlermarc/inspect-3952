@@ -1,5 +1,5 @@
 import { PerformanceTimingNames } from './enums/PerformanceTimingNames';
-export declare type PerformanceEntries = {
+export type PerformanceEntries = {
     [PerformanceTimingNames.CONNECT_END]?: number;
     [PerformanceTimingNames.CONNECT_START]?: number;
     [PerformanceTimingNames.DECODED_BODY_SIZE]?: number;
@@ -37,10 +37,10 @@ export interface PerformanceResourceTimingInfo {
     corsPreFlightRequest?: PerformanceResourceTiming;
     mainRequest?: PerformanceResourceTiming;
 }
-declare type PropagateTraceHeaderCorsUrl = string | RegExp;
+type PropagateTraceHeaderCorsUrl = string | RegExp;
 /**
  * urls which should include trace headers when origin doesn't match
  */
-export declare type PropagateTraceHeaderCorsUrls = PropagateTraceHeaderCorsUrl | PropagateTraceHeaderCorsUrl[];
+export type PropagateTraceHeaderCorsUrls = PropagateTraceHeaderCorsUrl | PropagateTraceHeaderCorsUrl[];
 export {};
 //# sourceMappingURL=types.d.ts.map

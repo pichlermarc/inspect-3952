@@ -1,4 +1,5 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import type * as http from 'http';
 import type * as https from 'https';
 import { OTLPExporterBase } from '../../OTLPExporterBase';

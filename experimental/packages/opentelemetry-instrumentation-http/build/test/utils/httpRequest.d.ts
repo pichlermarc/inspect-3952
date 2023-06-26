@@ -1,7 +1,8 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import * as http from 'http';
 import { URL } from 'url';
-declare type GetResult = Promise<{
+type GetResult = Promise<{
     data: string;
     statusCode: number | undefined;
     resHeaders: http.IncomingHttpHeaders;

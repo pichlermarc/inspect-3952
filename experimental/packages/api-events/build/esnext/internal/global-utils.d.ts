@@ -1,6 +1,6 @@
 import { EventEmitterProvider } from '../types/EventEmitterProvider';
 export declare const GLOBAL_EVENTS_API_KEY: unique symbol;
-declare type Get<T> = (version: number) => T;
+type Get<T> = (version: number) => T;
 export declare const _global: Partial<{
     [GLOBAL_EVENTS_API_KEY]: Get<EventEmitterProvider>;
 }>;

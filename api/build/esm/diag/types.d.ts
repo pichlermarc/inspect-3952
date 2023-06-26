@@ -1,4 +1,4 @@
-export declare type DiagLogFunction = (message: string, ...args: unknown[]) => void;
+export type DiagLogFunction = (message: string, ...args: unknown[]) => void;
 /**
  * Defines an internal diagnostic logger interface which is used to log internal diagnostic
  * messages, you can set the default diagnostic logger via the {@link DiagAPI} setLogger function.

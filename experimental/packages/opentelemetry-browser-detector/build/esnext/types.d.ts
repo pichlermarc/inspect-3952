@@ -1,4 +1,4 @@
-export declare type UserAgentData = {
+export type UserAgentData = {
     brands: {
         brand: string;
         version: string;

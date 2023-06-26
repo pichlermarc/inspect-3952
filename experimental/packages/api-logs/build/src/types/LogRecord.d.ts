@@ -1,5 +1,5 @@
 import { AttributeValue, Context } from '@opentelemetry/api';
-export declare type LogAttributeValue = AttributeValue | LogAttributes;
+export type LogAttributeValue = AttributeValue | LogAttributes;
 export interface LogAttributes {
     [attributeKey: string]: LogAttributeValue | undefined;
 }
